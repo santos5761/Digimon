@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url("https://i.pinimg.com/originals/4d/45/23/4d45238e48350f10c87a0786cd457665.jpg");
+    color: #08090b;
+  }
+  
+  /*Logo*/
+  
+  #logo {
+    object-fit: contain;
+    height: 12rem;
+    margin: 1rem auto;
+  }
+  
+  /*Container com todos os elementos*/
+  
+  .container {
+    margin:10rem auto;
+    display: flex;
+    
+  }
+  
+  /*Card Digimon*/
+  
+  .container .card {
+    height: 45rem;
+    width: 40rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container .card img {
+    width: 100%;
+    height: 80%;
+  }
+  .container .card .txt {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 20%;
+    color: #f9bc3d;
+    background-color: #0b4976;
+  }
+  
+  .container .card .txt h2 {
+    width: 30%;
+    text-align: center;
+    background-color: #0b4976;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 30px;
+    font-size: 2rem;
+  }
+  
+  .container .card .txt h1 {
+    width: 70%;
+    text-align: center;
+    background-color: #207eb7;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    font-size: 2.6rem;
+  }
+  
+  /*Botoes de avançar e Voltar*/
+  
+  .container button {
+    margin: auto 1rem;
+    cursor: pointer;
+    padding: 2rem;
+    border: none;
+    background-color: #dce4d8;
+    border-radius: 5px;
+    font-size: 2rem;
+  }
+  
+  .container #btnPrev {
+    background: #dce4d870;
+    cursor: default;
+    transition: 1s;
+  }
+  
+  /*Pesquisar digimon*/
+  
+  .pesquisa {
+    margin: 1rem auto;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    gap:1rem
+  }
+  
+  .pesquisa input {
+    padding: 0.3rem;
+    font-size: 1.8rem;
+  }
+  
+  .pesquisa button {
+    padding: 0.3rem;
+    cursor: pointer;
+    border: none;
+    background-color: #dce4d8;
+    font-size:1.6rem;
+  }
+  
+  /*Resposinvidade Mobile*/
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  
+    .container .card {
+      height: 30rem;
+      width: 23rem;
+    }
+  
+    .pesquisa {
+      width: 23rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+  
+    .pesquisa input {
+      width: 100%;
+    }
+  }
+  
